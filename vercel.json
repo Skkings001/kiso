@@ -1,0 +1,29 @@
+{
+  "functions": {
+    "api/m3u.php": {
+      "runtime": "vercel-php@0.7.1"
+    }
+  },
+  "routes": [
+    {
+     "src": "/",
+     "dest": "/api/m3u.php"
+    },
+    {
+      "src": "/config",
+      "dest": "/api/conig.php"
+    },
+    {
+      "src": "/keys",
+      "dest": "/api/keys.php"
+    },
+    {
+      "src": "/mpd",
+      "dest": "/api/mpd.php"
+    },
+    {
+      "src": "/restream",
+      "dest": "/api/restream.php"
+    }
+  ]
+}
